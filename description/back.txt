@@ -1,0 +1,11 @@
+Criar Filme
+Ler Filme
+Atualizar Filme
+Deletar Filme
+
+Cadastro de usuario
+
+Avaliar Filme (Avaliação do filme é media de todas avaliações)
+Usuarios podem comentar na avaliação de outro usuario
+
+MySQL
