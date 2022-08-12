@@ -6,6 +6,12 @@ services:
       - backend-bridge
       - frontend-bridge
 
+  app-database:
+    image: mysql:latest
+    build:
+      context: contextPath
+      dockerfile: Dockerfile
+
 networks:
   backend-bridge:
     driver: bridge
