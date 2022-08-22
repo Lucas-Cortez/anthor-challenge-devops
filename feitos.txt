@@ -1,0 +1,44 @@
+FRONTEND
+Criar filme
+Editar filme
+Remover filme
+Listar os detalhes de um filme: diretor, elenco, ano, gênero, etc
+Avaliar filmes
+Comentar na avaliação de filmes
+Teste unitário
+
+*Opcionais:*
+
+- cadastro e login de usuários
+- Teste de integração
+- Integração com a API do OMDB ou TheMovieDB
+
+
+BACKEND
+
+CRUD de filmes✅
+Cadastro de usuários✅
+Usuários podem marcar filmes que já assistiram✅
+Usuários podem avaliar filmes✅
+- A avaliação de um filme é calculada pela média de avaliações dos usuários. (Calculo assincrono)
+Usuários podem comentar nas avaliações de outros usuários✅
+Banco de dados (MongoDB, Postgres, Cassandra, etc)✅
+Testes unitários (mire em 70% de cobertura)
+
+*Opcionais*
+
+- Use docker-compose✅
+- Teste de integração
+- Integração com a API do OMDB ou TheMovieDB
+- Typescript✅
+- GraphQL
+- Autenticação de usuários
+
+
+README do projeto:
+
+1. Como rodar o seu projeto
+1. Bugs conhecidos
+1. Como você planejou abordar este projeto? Que tecnologias foram utilizadas?
+1. Você acha algum dos requisitos ou funcionalidades difíceis em algum aspecto? Por quê?
+1. Se você tivesse mais tempo para fazer o projeto o que faria de diferente?

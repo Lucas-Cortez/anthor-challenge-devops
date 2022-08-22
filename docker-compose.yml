@@ -1,20 +1,39 @@
 services:
-  backend:
-    build: ./backend
-    container_name: backend-challenge
+  db_challenge:
+    image: mysql:latest
+    container_name: db_challenge
+    restart: always
+    environment:
+      MYSQL_DATABASE: anthor_challenge
+      MYSQL_ROOT_PASSWORD: 12345
     networks:
       - backend-bridge
-      - frontend-bridge
+    ports:
+      - 9000:3306
+    expose:
+      - 3306
+    volumes:
+      - teste_volume:/var/lib/mysql
 
-  app-database:
-    image: mysql:latest
+  backend_challenge:
     build:
-      context: contextPath
-      dockerfile: Dockerfile
+      context: ./backend
+    container_name: backend-challenge
+    ports:
+      - 8080:8080
+    networks:
+      - backend-bridge
+      # - frontend-bridge
+    depends_on:
+      - db_challenge
+      # db_challenge:
+      #   condition: service_completed_successfully
 
 networks:
   backend-bridge:
     driver: bridge
+# frontend-bridge:
+#   driver: bridge
 
-  frontend-bridge:
-    driver: bridge
+volumes:
+  teste_volume:

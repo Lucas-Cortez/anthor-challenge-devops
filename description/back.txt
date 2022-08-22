@@ -8,4 +8,11 @@ Cadastro de usuario
 Avaliar Filme (Avaliação do filme é media de todas avaliações)
 Usuarios podem comentar na avaliação de outro usuario
 
-MySQL
+docker run --name teste_db -e MYSQL_DATABASE=anthor_challenge -e MYSQL_ROOT_PASSWORD=12345 -d --network my-bridge -P mysql:latest
+docker run -d --network my-bridge -P anthor-challenge:latest
+
+Movie
+    Url imagem
+    Nome
+    ano
+    duração

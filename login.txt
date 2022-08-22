@@ -1,0 +1,4 @@
+fazer um hook com os metodos de logar e deslogar
+logar manda um requisição com email e senha
+deslogar limpa o localstorage
+fazer um context que toda vez q entra na pagina ele verifica a existencia de email e senha no localstorage, faz uma requisição para o backend que manda de volta o id e nome do usuario
